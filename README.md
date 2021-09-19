@@ -20,6 +20,8 @@ gcc -g main.c src/*.c utils/*.c -lm -o moniSH
 ./moniSH
 ```
 
+A copy of the most recently generated excutables is present in the directory.
+
 ## Details
 
 ### Prompt
