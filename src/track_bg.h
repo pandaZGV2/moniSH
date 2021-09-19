@@ -1,0 +1,6 @@
+#ifndef OS_ASSIGNMENT_2_TRACK_BG_H
+#define OS_ASSIGNMENT_2_TRACK_BG_H
+
+void track_bg();
+
+#endif //OS_ASSIGNMENT_2_TRACK_BG_H
