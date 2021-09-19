@@ -51,24 +51,28 @@ void pinfo(char *pid)
     {
         printf("\n");
     }
+    for(int i = 9; i <= 23; i++)
+    {
+        token = strtok_r(NULL, " ", &saveptr);
+    }
 
-    char statm_file[200];
-    sprintf(statm_file, "/proc/%s/statm", process_id);
-    fd = open(statm_file, O_RDONLY);
-    if (fd < 0)
-    {
-        perror("Could not open stat file");
-        free(buffer);
-        return;
-    }
-    if (read(fd, buffer, 1000000) == 0)
-    {
-        printf("Could not read from %s\n", statm_file);
-        free(buffer);
-        return;
-    }
-    saveptr = NULL;
-    token = strtok_r(buffer, " ", &saveptr);
+    // char statm_file[200];
+    // sprintf(statm_file, "/proc/%s/statm", process_id);
+    // fd = open(statm_file, O_RDONLY);
+    // if (fd < 0)
+    // {
+    //     perror("Could not open stat file");
+    //     free(buffer);
+    //     return;
+    // }
+    // if (read(fd, buffer, 1000000) == 0)
+    // {
+    //     printf("Could not read from %s\n", statm_file);
+    //     free(buffer);
+    //     return;
+    // }
+    // saveptr = NULL;
+    // token = strtok_r(buffer, " ", &saveptr);
     printf("memory -- %s\n", token);
     close(fd);
     free(buffer);
