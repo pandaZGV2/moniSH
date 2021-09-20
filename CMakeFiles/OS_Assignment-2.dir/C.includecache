@@ -78,14 +78,6 @@ utils/pid_name_pair.h
 utils/stack.h
 /home/aaron_cs/Documents/OS_Assignment-2/utils/stack.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/main.c
-global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
-/home/aaron_cs/Documents/OS_Assignment-2/src/args_vector.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/args_vector.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/src/cd.c
@@ -94,83 +86,35 @@ global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/src/cd.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/echo.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/echo.h
 args_vector.h
 /home/aaron_cs/Documents/OS_Assignment-2/src/args_vector.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/history.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/history.h
-
-/home/aaron_cs/Documents/OS_Assignment-2/src/ls.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/src/ls.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/pinfo.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/pinfo.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/prompt.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/prompt.h
-
-/home/aaron_cs/Documents/OS_Assignment-2/src/run_bg.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/src/run_bg.h
 args_vector.h
 /home/aaron_cs/Documents/OS_Assignment-2/src/args_vector.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/run_fg.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/run_fg.h
 args_vector.h
 /home/aaron_cs/Documents/OS_Assignment-2/src/args_vector.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/src/track_bg.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/src/track_bg.h
-
-/home/aaron_cs/Documents/OS_Assignment-2/utils/clear_variables.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/utils/clear_variables.h
 
-/home/aaron_cs/Documents/OS_Assignment-2/utils/init.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
-
 /home/aaron_cs/Documents/OS_Assignment-2/utils/init.h
-
-/home/aaron_cs/Documents/OS_Assignment-2/utils/pid_name_pair.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/utils/pid_name_pair.h
 sys/types.h
 -
-
-/home/aaron_cs/Documents/OS_Assignment-2/utils/stack.c
-../global.h
-/home/aaron_cs/Documents/OS_Assignment-2/global.h
 
 /home/aaron_cs/Documents/OS_Assignment-2/utils/stack.h
 

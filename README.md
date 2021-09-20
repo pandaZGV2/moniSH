@@ -8,6 +8,7 @@ The assignment folder consists of a `src` folder that implements the commands re
 To run the code
 
 ```shell
+cmake .
 make rebuild_cache
 make
 ./OS_Assignment-2
@@ -21,6 +22,11 @@ gcc -g main.c src/*.c utils/*.c -lm -o moniSH
 ```
 
 A copy of the most recently generated excutables is present in the directory.
+
+## Assumptions
+
+- We assume that the maximum size of a command is 10000.
+- We also assume that built-in commands are never run as background processes.
 
 ## Details
 
@@ -63,7 +69,7 @@ The `echo` command is handled by `echo()` from `echo.c` that parses the command 
 #### ls command
 
 The `ls` command lists a given file or the contents of the given directory. It accepts flags `-a` and `-l`. It also handles incorrect flags and multiple directories.
-The `-a` flag indicates that all files in a given directory, including the hidden ones, are to be printed. The `-l` command indicates that we must list information about the contents of the file along with the name of the file. We provide the permissions given to the file or directory, the username, the groupname, the size, the number of links, the last date of modification along with the name of the files and the directories.
+The `-a` flag indicates that all files in a given directory, including the hidden ones, are to be printed. The `-l` command indicates that we must list information about the contents of the file along with the name of the file. We provide the permissions given to the file or directory, the username, the groupname, the size, the number of links, the last date of modification along with the name of the files and the directories. The last date of modification is of the form "%month %day %Hour:%Minute" if the date was less than 6 months. Otherwise it is of the form "%month %day %Year". We assume the number of seconds in 6 months to be 180\*24\*60*60.
 If there are multiple directories or files, we apply the same flags to each of them, printing the output for each of them one after the other.
 The `ls` command is handled by `ls()` from `ls.c` which determines whether the given path refers to a directory or a file. If it refers to a directory we pass it to `ls_dir()` to print the contents of the directory. If not we pass it to `ls_file()` that simply prints the file name along with any extra ifnormation if the `-l` flag is specified.
 

@@ -18,7 +18,7 @@ int cd(char *token1)
     char *real_dir = NULL;
     char *actual_path = replace_string(token1, "~", home_folder);
     real_dir = realpath(actual_path, NULL);
-    if (errno == ENOENT)
+    if (real_dir == NULL)
     {
         perror("Directory does not exist");
         return -2;

@@ -72,6 +72,10 @@ void deque_pushfront(deque *d, char *element)
             return;
         }
     }
+    if (strlen(element) == 1 && element[0] == '\n')
+    {
+        return;
+    }
     node_hist *new = malloc(sizeof(node_hist));
     assert(new);
     strcpy(new->element, element);
